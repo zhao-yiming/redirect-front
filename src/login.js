@@ -13,7 +13,7 @@ function Login() {
 
 
   function login(){
-    fetch("http://localhost:5000/login", {
+    fetch("http://localhost:5000/redirect-login", {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -38,7 +38,7 @@ function Login() {
 				</div> 
 				<div> 
 					<label htmlFor="passw">Password</label>
-					<input type="text" name="passw" id="passw" onChange={(e) => setInputPass(e.target.value)}/> 
+					<Password type="text" name="passw" id="passw" feedback={false} onChange={(e) => setInputPass(e.target.value)}/> 
 				</div>  
 				<button type="submit" onClick={login}>Login</button>
         <div>{message}</div>

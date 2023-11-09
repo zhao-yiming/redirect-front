@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/redirect-login" element={<Login />} />
         <Route path="/response/:id" element={<Response />} />
       </Routes>
     </Router>
