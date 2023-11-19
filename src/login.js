@@ -13,7 +13,7 @@ function Login() {
 
 
   function login(){
-    fetch("http://localhost:8081/redirect-login", {
+    fetch("http://localhost:8082/redirect-login", {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -1,6 +1,6 @@
-FROM node:18-alpine
+FROM arm32v7/node:14
 WORKDIR /app
 COPY . .
-RUN yarn install --production
+RUN npm install --production
 CMD ["node", "index.js"]
 EXPOSE 8080
